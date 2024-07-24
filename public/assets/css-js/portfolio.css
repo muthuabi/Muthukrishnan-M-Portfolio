@@ -177,9 +177,9 @@ section {
 }
 section,.edu-card,.skill-card-item,.contact-card
 {
-	animation: anime-pull-up 1.3s ease-in-out;
+	/*animation: anime-pull-up 1.3s ease-in-out;
 	animation-range:entry 0% cover 25%;
-	animation-timeline:view();
+	animation-timeline:view();*/
 }
 
 .section-head {
