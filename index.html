@@ -1,6 +1,17 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-   <meta charset="UTF-8">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-42569H2S14"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-42569H2S14');
+  </script>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
     content="Muthukrishnan's Portfolio - Get to know about Krish via his Portfolio. Showcasing his skills, projects, and contact information.">
@@ -8,11 +19,11 @@
   <meta name="author" content="Muthukrishnan M">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://muthukrishnan-m-portfolio.web.app">
-  <link rel="icon" type="image/png" href="./public/assets/images/Portfoliobg.png">
+  <link rel="icon" type="image/png" href="./assets/images/Portfoliobg.png">
   <!-- Open Graph meta tags -->
   <meta property="og:title" content="Muthukrishnan's Portfolio">
   <meta property="og:description" content="Get to know about Muthukrishnan via his Portfolio.">
-  <meta property="og:image" content="./public/assets/images/Portfoliobg.png">
+  <meta property="og:image" content="./assets/images/Portfoliobg.png">
   <meta property="og:url" content="https://muthukrishnan-m-portfolio.web.app">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_US">
@@ -23,12 +34,678 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Muthukrishnan's Portfolio">
   <meta name="twitter:description" content="Get to know about Muthukrishnan via his Portfolio.">
-  <meta name="twitter:image" content="./public/assets/images/Portfoliobg.png">
+  <meta name="twitter:image" content="./assets/images/Portfoliobg.png">
   <meta name="twitter:creator" content="@M_Krish_Abi_07">
 
   <title>Muthukrishnan's Portfolio</title>
- <script>
-   window.location.href="./public/index.html";
- </script>
+  <!--
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ --> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+ 
+  <link rel="stylesheet" href="assets/css-js/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css-js/portfolio.css">
+  <!--
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  -->
+  <script src="assets/css-js/jquery.min.js"></script>
+  <script src="assets/css-js/bootstrap.bundle.min.js"></script>
+  <script src="assets/css-js/portfolio.js"></script>
+
+
+
 </head>
+<style>
+
+</style>
+
+<body>
+  <header>
+    <style>
+
+    </style>
+    <div class="portfolio-loader" id="portfolio_loader">
+      <div class='portfolio-inner-loader'>
+        <div class='mini-circle'></div>
+        <div class='mini-circle'></div>
+        <div class='mini-circle'></div>
+      </div>
+    </div>
+    <div class="toast bg-gradient"  role="alert" id="my_toast">
+      <div class="toast-header">
+        <i class="fa fa-bell me-2"></i>
+        <strong class="me-auto" style="color:rgb(66, 64, 64)">Portfolio</strong>
+        <small> </small>
+        <button class="btn-close" data-bs-dismiss="toast"></button>
+      </div>
+      <div class="toast-body">
+        <b style="color:rgb(99, 96, 96)" id="message">Thank you for reaching out!<br>Your connection message has been
+          received.</b>
+      </div>
+    </div>
+    <div class="toast bg-gradient"  role="alert" id="my_toast_offline">
+      <div class="toast-header">
+        <i class="fa fa-bell me-2"></i>
+        <strong class="me-auto" style="color:rgb(66, 64, 64)">Portfolio</strong>
+        <small> </small>
+        <button class="btn-close" data-bs-dismiss="toast"></button>
+      </div>
+      <div class="toast-body">
+        <b style="color:rgb(99, 96, 96)" id="message">Thank you for reaching out!<br>Your connection message has been
+          received.</b>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg fixed-top  navbar-light ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <h1 style="font-size:1.5em">Portfolio</h1>
+
+        </a>
+        <button class="navbar-toggler" id="nav-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#portfolionav" aria-controls="portfolionav" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse max-width-fit-content" id="portfolionav">
+          <ul class="navbar-nav list-group ">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-me">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="container-fluid">
+    <section id="home">
+      <div class="row d-flex align-items-center home-row ">
+        <div class="col-md-6">
+          <h3>Hey There, I am</h3>
+          <h1 class="head-name">Muthukrishnan</h1>
+          <h2 class="head-role">Software Developer</h2>
+          <p class="lead text-justify">
+            Welcome! I'm Muthukrishnan M, a computer science graduate passionate about technology.
+            Explore my portfolio learn more about me. I'm open to connect and work together to build innovative projects
+            with my expertise!</p>
+          <a href="#contact" class="btn btn-lg btn-primary">Contact Me</a>
+
+
+        </div>
+        <div class="col-md-6">
+          <div class="img-container rounded-circle ">
+            <!-- <img src="images/KrishRemovedBetter.png" alt="Image Not Loaded" class="img-fluid"> -->
+            <img src="assets/images/Krishcrop.png" alt="Image Not Loaded" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about-me">
+      <h2 class="section-head">About Me</h2>
+      <div class="row d-flex align-items-center">
+        <div class="col-md-6">
+          <div class="rounded d-flex justify-content-center align-items-center">
+            <img src="assets/images/KrishProfile.jpg" width="80%" height="70%" alt="Image Not Loaded"
+              class="img-fluid rounded">
+            <!-- <img src="images/IMG_20191013_212709.jpg"  alt="Image Not Loaded" class="img-fluid"> -->
+          </div>
+        </div>
+        <div class="col-md-6 my-4">
+          <div class="sub-content">
+            <h2 class="sub-head-text">Summary</h2>
+            <p class="text-justify">
+
+
+              I am a highly motivated computer science graduate with a good foundation in web development, programming,
+              and problem-solving. I possess skills in multiple programming languages including C, C++, Java, and
+              Python, and have extensive experience with web technologies such as HTML, CSS, JavaScript, React, and
+              Bootstrap. My ability to collaborate effectively on real-time projects was demonstrated during my
+              internship at Digisailor, where I contributed to projects like “Visuvasakappal” and “Fresh Wheels.”
+              Additionally, I have developed comprehensive systems, such as the Student Information and Support System,
+              which streamlined data access and improved communication efficiency.
+
+            </p>
+            <p class="text-justify">
+
+              I am committed to continuous learning, innovation, and teamwork, with a proven track record of enhancing
+              user interfaces and functionality. Fluent in Tamil and proficient in English, I bring a keen eye for
+              detail and a passion for leveraging technical expertise to drive organizational success. My portfolio
+              showcases my skills and education, reflecting my dedication and expertise in the field.
+
+            </p>
+            <a href="assets/docs/KrishResumeByKrish.pdf" download class="btn btn-lg btn-dark ">Download Resume</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <h2 class="section-head">Skills</h2>
+      <div class="skill-cards p-2">
+        <div class="row d-flex justify-content-evenly gap-2" id="skills_container">
+
+
+        </div>
+      </div>
+    </section>
+    <section id="education">
+      <h2 class="section-head">
+        Education
+      </h2>
+      <div class="edu-cards" id="education_container">
+
+      </div>
+    </section>
+    <section id="projects">
+      <h2 class="section-head">Projects</h2>
+
+      <div class="carousel slide carousel-dark w-100" id="portfolio_carousel" data-bs-ride="carousel">
+        <!-- <div class="carousel-indicators  d-mobile">
+                <button type="button" data-bs-target="#portfolio_carousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#portfolio_carousel" data-bs-slide-to="1" class="active"></button>
+                <button type="button" data-bs-target="#portfolio_carousel" data-bs-slide-to="2" class="active"></button>
+            </div> -->
+        <button class="carousel-control-prev d-mobile" type="button" data-bs-slide="prev"
+          data-bs-target="#portfolio_carousel">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Prev</span>
+        </button>
+        <button class="carousel-control-next d-mobile " type="button" data-bs-slide="next"
+          data-bs-target="#portfolio_carousel">
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        <div class="carousel-inner py-2 rounded" id="projects_container">
+
+        </div>
+
+
+      </div>
+
+    </section>
+    <section id="contact">
+      <h2 class="section-head">Contact Me</h2>
+      <div class="contact-cards">
+        <div class="row gap-3 gap-md-0 d-md-flex d-lg-flex align-items-md-center align-items-lg-center">
+          <div class=" col-md-6">
+            <div class="contact-card">
+
+              <div class="sub-contact-card">
+                <h4 class="contact-sub-head">Email</h4>
+                <b class="lead"><a href="mailto:muthuabi292@gmail.com">muthuabi292@gmail.com</a></b>
+              </div>
+              <div class="sub-contact-card">
+                <h4 class="contact-sub-head">Phone</h4>
+                <b class="lead"><a href="tel:+919025190054">+91 90251 90054</a></b>
+              </div>
+              <div class="sub-contact-card">
+                <h4 class="contact-sub-head">Address</h4>
+                <b class="lead">22, North Street<br>Petduraisamypuram, Srivaikuntam Taluk<br>Thoothukudi District, Tamil
+                  Nadu <br>
+                  Pincode - 628601.</b>
+              </div>
+              <div class="sub-contact-card">
+                <h4 class="contact-sub-head">Socials</h4>
+                <div class="social-outer">
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class=" col-md-6">
+            <div class="contact-card">
+              <h2 class="contact-sub-head connect">Connect</h2>
+              <form action="" class="connect-form" id="connect-form">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" name="name" id="name" required placeholder="Your Name" class="form-control">
+                  <small>This field is required</small>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" name="email" required id="email" placeholder="Your Email" class="form-control">
+                  <small>Fill the above field with valid Email ID.</small>
+                </div>
+                <!-- <div class="form-group">
+                  <label for="phone">Email</label>
+                  <input type="number" name="phone" id="phone" placeholder="Your Phone Number" class="form-control">
+                </div> -->
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <input type="text" required name="subject" id="subject" class="form-control" placeholder="Subject">
+                  <small>Fill this field</small>
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea name="message" required id="message" class="form-control"
+                    placeholder="Your Message"></textarea>
+                  <small>Fill this field with your Message/Comments</small>
+                </div>
+                <button class="btn my-1" type="submit" style="background-color: rgb(255, 115, 0);">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+
+
+      </script>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="copyrights">
+      <b class="lead text-light ">&copy; 2024 Muthukrishnan M.</b>
+      <b class="lead text-light">All Rights Reserved </b>
+    </div>
+    <div class="d-flex flex-md-row flex-lg-row flex-column align-items-center justify-content-between gap-2 ">
+      <div class="col-md-3">
+        <h1>Portfolio</h1>
+      </div>
+
+      <div class="col-md-4">
+        <div class="social-outer justify-content-center ">
+      
+        </div>
+
+      </div>
+      <div class="d-flex justify-content-center gap-md-3 gap-2 gap-3 flex-wrap col-md-4 ">
+
+        <a href="#"  class="lead">Home</a>
+        <a href="#about-me" class="lead">About Me</a>
+        <a href="#skills" class="lead">Skills</a>
+        <a href="#education" class="lead">Education</a>
+        <a href='#projects' class='lead'>Projects</a>
+        <!-- <a href="#projects" class="lead">Education</a> -->
+        <a href="#contact" class="lead">Contact</a>
+
+      </div>
+    </div>
+  </footer>
+  <a id="toparrow" href="#"><span>&uparrow;</span></a>
+  <script>
+    // Hey GPT Look Here 
+    // document.addEventListener("DOMContentLoaded", (main) => {
+    const project_data = [
+      {
+        id: 1,
+        project_title: 'Student Information and Support System',
+        project_image: 'assets/images/back-to-school.jpg',
+        project_description: `The <b>Student Information and Support System (SIS)</b> is a
+web-based application designed to manage and streamline the administrative processes of
+an educational institution. The system allows administrators, faculty, and students to interact
+with the platform to perform various tasks.`,
+        project_link: "https://sis107.infinityfreeapp.com/SIS/",
+        stacks_used: ['HTML', 'CSS', 'JS', 'PHP', 'MySQL', 'Bootstrap', 'Chart JS'],
+        project_features: [
+          { feature_head: 'User Roles', feature_body: "Secure logins for admins, teachers, and students ensure tailored access to features and data." },
+          { feature_head: 'Course & Grade Tracking', feature_body: "Teachers can manage course details and record student grades for accurate academic tracking." },
+          {
+            feature_head: 'Attendance & Notices', feature_body: "Real-time monitoring of student attendance with the ability to post important notices to keep all stakeholders informed."
+          },
+          {
+            feature_head: 'Document Storage', feature_body: "Securely store and manage student documents such as transcripts, assignments, and certificates for easy access and compliance."
+          },
+          {
+            feature_head: 'Custom Dashboards', feature_body: "Personalized dashboards provide users with quick access to relevant information based on their role and responsibilities."
+          },
+          {
+            feature_head: 'Request-Response System', feature_body: "Students can submit requests for information updates, which are reviewed and approved by teachers/ admins, ensuring data accuracy."
+          },
+          {
+            feature_head: 'Visual Analytics', feature_body: "Utilize circular progress indicators and Chart.js integration to visualize academic data and trends for informed decision- making."
+          },
+          {
+            feature_head: 'Student List with Pagination and Search', feature_body: "Navigate through a comprehensive student list with pagination and search functionality, enabling efficient management of student records."
+          }
+        ]
+      },
+	  {
+  id: 2,
+  project_title: 'Vote System',
+  project_image: 'assets/images/online-voting.png',
+  project_description: `The <b>Vote System</b> is a web-based application designed for college elections with multiple voting booths connected via a LAN network. Booth staff select criteria and proceed to vote if the poll is active, while admins manage polls and view live results.`,
+  project_link: "https://github.com/muthuabi/Vote_System/",
+  stacks_used: ['PHP', 'MySQL', 'HTML', 'CSS', 'JavaScript','Bootstrap','AJAX'],
+  project_features: [
+    { feature_head: 'Multiple Voting Booths', feature_body: "Booths connected through the same LAN network, with no login required for booth staff." },
+    { feature_head: 'Criteria Selection', feature_body: "Staff select criteria such as shift or gender before proceeding to vote." },
+    { feature_head: 'Admin Control', feature_body: "Admins can start and end polls, and perform CRUD operations on positions, candidates, and other admins." },
+    { feature_head: 'Live Ballot', feature_body: "Admins and viewers can see live polling results with viewer credentials created by the admin." },
+    { feature_head: 'Data Migration', feature_body: "Master admins can migrate current election data to an old table and reset tables for the next election cycle." },
+    { feature_head: 'Dynamic Dashboard', feature_body: "Displays multiple post cards with dynamic updates on total candidates and total votes once the poll has started." },
+    { feature_head: 'Master Admin Actions', feature_body: "Master admins can start (restart if ended accidentally) and end the poll, add/delete/restrict other admins, and delete votes, candidates, and positions tables with a single button. Deleting the poll returns it to the initial stage." },
+    { feature_head: 'Print Features', feature_body: "Print winners and all results with candidate image, college logo, and details after the poll ends, available for all officials (admin, sub-admin, viewer)." },
+    { feature_head: 'Live Ballot Notifications', feature_body: "Toast notifications appear when the server goes offline and persist until it comes back online." },
+    { feature_head: 'Position Status', feature_body: "Indicates whether a candidate is unopposed, no contestants, or opposed. Unopposed candidates don't receive votes and are not shown in the live ballot but are visible in print marked as unopposed." }
+  ]
+}
+	  
+    ];
+    const skill_data = [
+      {
+        id: 1,
+        skill: "HTML",
+        icon: "fab fa-html5",
+        level: "Advanced",
+        description: [
+          "Self-taught with extensive personal practice.",
+          "Proficient in HTML5 elements.",
+          "Experienced in designing responsive layouts.",
+          "In-depth knowledge of advanced HTML tags."
+        ]
+      },
+      {
+        id: 2,
+        skill: "JavaScript",
+        icon: "fab fa-js",
+        level: "Intermediate",
+        description: [
+          "Strong understanding of JavaScript syntax and semantics.",
+          "Proficient in DOM manipulation and event handling.",
+          "Familiar with advanced JavaScript concepts.",
+          "Experience with APIs like Fetch API and AJAX."
+        ]
+      },
+      {
+        id: 3,
+        skill: "PHP",
+        icon: "fab fa-php",
+        level: "Advanced",
+        description: [
+          "Extensive hands-on experience with PHP projects.",
+          "Developed various projects using PHP.",
+          "Proficient in file handling in PHP.",
+          "Experience with database integration and management using PHP."
+        ]
+      },
+      {
+        id: 4,
+        skill: "SQL",
+        icon: "fas fa-database",
+        level: "Intermediate",
+        description: [
+          "Proficient in writing queries for CRUD operations.",
+          "Skilled in using aggregate functions in SQL.",
+          "Experienced in using JOINS for data retrieval."
+        ]
+      },
+      {
+        id: 5,
+        skill: "React",
+        icon: "fab fa-react",
+        level: "Beginner",
+        description: [
+          "Basic knowledge of setting up React applications.",
+          "Familiar with JSX syntax in React.",
+          "Experience in creating and using React components."
+        ]
+      },
+      {
+        id: 6,
+        skill: "Bootstrap",
+        icon: "fab fa-bootstrap",
+        level: "Intermediate",
+        description: [
+          "Proficient in using common Bootstrap class names.",
+          "Experience with Bootstrap components and plugins in projects.",
+          "Customized Bootstrap for various web applications."
+        ]
+      },
+      {
+        id: 7,
+        skill: "Java",
+        icon: "fab fa-java",
+        level: "Basic",
+        description: [
+          "Understanding of Java syntax and semantics.",
+          "Knowledge of OOP concepts and multithreading in Java."
+        ]
+      },
+      {
+        id: 8,
+        skill: "Python",
+        icon: "fab fa-python",
+        level: "Core",
+        description: [
+          "Proficient in Python syntax and semantics.",
+          "Comprehensive knowledge of Python data structures, including lists, tuples, and dictionaries."
+        ]
+      },
+      {
+        id: 9,
+        skill: "C & C++",
+        icon: "fas fa-code",
+        level: "Core",
+        description: [
+          "Solid understanding of syntax and semantics in C and C++.",
+          "Comprehensive knowledge of Object-Oriented Programming concepts using C++.",
+          "Hands-on experience with Data Structures in C++."
+        ]
+      }
+    ]
+    const education_data = [
+      {
+        id: 1,
+        degree: 'B.Sc. Computer Science',
+        institution: "St Xavier's College - Palayamkottai",
+        start_date: 'Sep 2021',
+        end_date: 'May 2024',
+        score: 'CGPA - 8.6',
+        data_value: '86',
+        skills_learned: ['C&C++', 'Java', 'Python', 'SQL', 'PHP']
+      },
+      {
+        id: 2,
+        degree: 'H.S.E - Computer Science',
+        institution: "Margoschis Higher Secondary School - Nazareth",
+        start_date: '2020',
+        end_date: '2021',
+        score: 'Percentage - 92.6%',
+        data_value: '92.6',
+        skills_learned: ['C++', 'SQL', 'Python']
+      },
+      {
+        id: 3,
+        degree: 'S.S.L.C',
+        institution: "Margoschis Higher Secondary School - Nazareth",
+        start_date: '2018',
+        end_date: '2019',
+        score: 'Percentage - 80.8%',
+        data_value: '80.8',
+        skills_learned: []
+      }
+    ];
+    
+const social_media_data = [
+  {
+    platform: "WhatsApp",
+    url: "https://wa.me/+919025190054/",
+    icon: "fab fa-whatsapp"
+  },
+  {
+    platform: "Twitter",
+    url: "https://twitter.com/M_Krish_Abi_07/",
+    icon: "fab fa-twitter"
+  },
+  {
+    platform: "LinkedIn",
+    url: "https://www.linkedin.com/in/muthukrishnan-m-800bb7274/",
+    icon: "fab fa-linkedin"
+  },
+  {
+    platform: "Quora",
+    url: "https://www.quora.com/profile/Muthukrishnan-M-36",
+    icon: "fab fa-quora"
+  },
+  {
+    platform: "Instagram",
+    url: "https://www.instagram.com/m.krish_abi_07",
+    icon: "fab fa-instagram"
+  }
+];
+    const projects_list = document.querySelector("#projects_container");
+    const skills_list = document.querySelector("#skills_container");
+    const education_list = document.querySelector("#education_container");
+    const social_media_container=document.querySelectorAll(".social-outer");//Array;
+    const d_mobile=document.querySelectorAll(".d-mobile");//Array;
+    const active_id_for_carousel = project_data[0].id;
+	if(project_data.length<=1)
+	{
+		d_mobile.forEach(element=>{
+			element.style.opacity="0%";
+		})
+	}
+    project_data.forEach(data => {
+
+      const stacks_used = data.stacks_used.map(stack => `<li class='skill-list-item'>${stack}</li>`).join('');
+      const features_list = data.project_features.map(feature => `<li><b>${feature.feature_head}</b><p>${feature.feature_body}</p></li>`).join('');
+      projects_list.innerHTML += `
+      <div class="${data.id == active_id_for_carousel ? 'active' : ''} c-item carousel-item" id="project_card${data.id}">
+            <div class="project-card">
+              <div class="p-2">
+                <img src="${data.project_image}" alt="" class="img-fluid rounded">
+              </div>
+              <div class="project-description">
+                <h4 class="sub-head-text">${data.project_title}</h4>
+                <div class="px-md-3 px-2 d-flex flex-column gap-1">
+                  <p class=" mb-1  text-justify">
+                      ${data.project_description}
+                  </p>
+          
+                  <a class="btn btn-dark" href="${data.project_link}">View Project</a>
+                  <b>Stacks Used</b>
+                  <div class="w-100 d-flex flex-wrap  p-2 gap-md-3 gap-2 align-items-center" id="stacks_used">
+                  ${stacks_used}
+                  </div>
+
+                  <div class="accordion">
+                    <div class="accordion-item" style="border:none">
+                      <div class="accordion-header accordion-button w-100 " data-bs-target="#Accord${data.id}"
+                        data-bs-toggle="collapse">
+                        <b class="pl-1">Features</b>
+                      </div>
+                      <div class="accordion-collapse collapse" id="Accord${data.id}">
+                        <ul class="project-card-list" id="features_list">
+                          ${features_list}
+                        </ul>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+      `;
+    })
+    skill_data.forEach(data => {
+      const description_list = data.description.map(element => `<li class='list-group-item'>${element}</li>`).join('');
+      skills_list.innerHTML += `
+          <div class="col-md-3 skill-card-item" id="skill_card${data.id}">
+            <div class="skill-card-pop">
+              <div class="hexagon">
+                <div class="inner-hex">
+                  <i class="${data.icon} skill-icon"></i>
+                </div>
+              </div>
+            </div>
+            <div class="skill-card-body">
+              <h2 class="skill-card-head">${data.skill}</h2>
+              <b>(${data.level})</b>
+              <ul class="list-group">
+                ${description_list}
+              </ul>
+            </div>
+          </div>
+        
+        `;
+    })
+    education_data.forEach(data => {
+      const skills_learned = data.skills_learned.map(element => `<li class='skill-list-item'>${element}</li>`).join('');
+      education_list.innerHTML += `
+          <div class="edu-card" id='edu-card${data.id}'>
+          <div class="d-flex align-items-center">
+            <div>
+              <div class="circprogress" data-value="${data.data_value}">
+                <span>100%</span>
+               
+              </div>
+            </div>
+            <div class="sub-content">
+              <h5 class="sub-head-text">${data.degree}</h5>
+              <b style="color:rgb(92, 89, 89)">${data.institution}</b>
+              <h6><time>${data.start_date}</time> - <time>${data.end_date}</time></h6>
+              <strong>${data.score}</strong>
+            </div>
+          </div>
+          ${data.skills_learned.length == 0 ? '' : `
+          <div class="w-100 d-flex px-2 gap-md-4 gap-2 align-items-center" style="flex-wrap: wrap;">
+            <b class="lead">Skills Learned</b>
+            ${skills_learned}
+          </div>`
+        }
+        </div>
+        `;
+    })
+    const social_list=social_media_data.map(data=>`  <a href="${data.url}">
+            <div class="socials">
+              <i class="${data.icon} social-icon"></i>
+            </div>
+          </a>`).join('');
+    social_media_container.forEach(element=>{
+      element.innerHTML+=social_list;
+    })
+
+    // });
+  </script>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyBZuj--rjgyERQ4LP6nrvRyjw4yH2nClsc",
+      authDomain: "muthukrishnan-m-portfolio.firebaseapp.com",
+      projectId: "muthukrishnan-m-portfolio",
+      storageBucket: "muthukrishnan-m-portfolio.appspot.com",
+      messagingSenderId: "190740020811",
+      appId: "1:190740020811:web:c43412c604cc49cbfd57ce",
+      measurementId: "G-42569H2S14"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+</body>
+<script>
+
+</script>
+
 </html>
