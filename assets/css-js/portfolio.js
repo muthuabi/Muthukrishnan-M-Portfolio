@@ -129,12 +129,12 @@ document.addEventListener("DOMContentLoaded", (e) => {
     document.addEventListener("scroll", (e) => {
     if (window.scrollY > 30) {
       document.getElementById("toparrow").style.opacity = "100%";
-      document.getElementById("toparrow").style.right = "0.5rem";
+      document.getElementById("toparrow").style.left = "0.5rem";
 
     }
     else {
       document.getElementById("toparrow").style.opacity = "0%";
-      document.getElementById("toparrow").style.right = "-3rem";
+      document.getElementById("toparrow").style.left = "-3rem";
     }
   })
 

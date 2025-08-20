@@ -8,796 +8,64 @@
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
+
     gtag('config', 'G-42569H2S14');
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="Muthukrishnan's Portfolio - Full Stack Developer specializing in web development with expertise in JavaScript, PHP, React, and more. View my projects and skills.">
-  <meta name="keywords" content="Muthukrishnan, Krish, Portfolio, Web Developer, Full Stack Developer, PHP, JavaScript, React, Projects, Skills, Contact">
+    content="Muthukrishnan's Portfolio - Get to know about Krish via his Portfolio. Showcasing his skills, projects, and contact information.">
+  <meta name="keywords" content="MuthuKrishnan,Krish, Portfolio, Web Developer, Projects, Skills, Contact">
   <meta name="author" content="Muthukrishnan M">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://muthukrishnan-m-portfolio.web.app">
   <link rel="icon" type="image/png" href="./assets/images/Portfoliobg.png">
-
   <!-- Open Graph meta tags -->
-  <meta property="og:title" content="Muthukrishnan M - Full Stack Developer Portfolio">
-  <meta property="og:description" content="Full Stack Developer specializing in web development with expertise in JavaScript, PHP, React, and more.">
+  <meta property="og:title" content="Muthukrishnan's Portfolio">
+  <meta property="og:description" content="Get to know about Muthukrishnan via his Portfolio.">
   <meta property="og:image" content="./assets/images/Portfoliobg.png">
   <meta property="og:url" content="https://muthukrishnan-m-portfolio.web.app">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_US">
   <meta property="og:site_name" content="Muthukrishnan's Portfolio">
+  <!-- <meta property="article:author" content="https://www.example.com/author-profile"> -->
 
   <!-- Twitter Card meta tags -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Muthukrishnan M - Full Stack Developer">
-  <meta name="twitter:description" content="Full Stack Developer specializing in web development with expertise in JavaScript, PHP, React, and more.">
+  <meta name="twitter:title" content="Muthukrishnan's Portfolio">
+  <meta name="twitter:description" content="Get to know about Muthukrishnan via his Portfolio.">
   <meta name="twitter:image" content="./assets/images/Portfoliobg.png">
   <meta name="twitter:creator" content="@M_Krish_Abi_07">
 
-  <title>Muthukrishnan M - Full Stack Developer Portfolio</title>
+  <title>Muthukrishnan's Portfolio</title>
+  <!--
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="assets/css-js/bootstrap.min.css">
-
-
+  <link rel="stylesheet" href="assets/css-js/portfolio.css">
+  <!--
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  -->
   <script src="assets/css-js/jquery.min.js"></script>
   <script src="assets/css-js/bootstrap.bundle.min.js"></script>
+  <script src="assets/css-js/portfolio.js"></script>
 
-  <style>
-    /* Modern CSS Reset */
-    *, *::before, *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
 
-    /* Variables for theming */
-    :root {
-      --bg-primary: #0a0a14;
-      --bg-secondary: #141424;
-      --bg-card: #1c1c2d;
-      --accent-primary: #7e57c2;
-      --accent-secondary: #4fc3f7;
-      --text-primary: #f0f0f0;
-      --text-secondary: #a0a0c0;
-      --border-color: #2a2a3f;
-      --success: #00e676;
-      --error: #ff5252;
-      --transition: all 0.3s ease;
-      --shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-      --shadow-hover: 0 15px 40px rgba(0, 0, 0, 0.4);
-      --gradient: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
-    }
 
-    /* Base styles */
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: var(--bg-primary);
-      color: var(--text-primary);
-      line-height: 1.6;
-      overflow-x: hidden;
-      scroll-behavior: smooth;
-    }
-
-    /* Typography */
-    h1, h2, h3, h4, h5, h6 {
-      font-weight: 700;
-      line-height: 1.2;
-      margin-bottom: 1rem;
-    }
-
-    .lead {
-      font-size: 1.1rem;
-      color: var(--text-secondary);
-    }
-
-    /* Layout */
-    .container-fluid {
-      padding: 0 1.5rem;
-    }
-
-    /* Navigation */
-    .navbar {
-      background-color: rgba(10, 10, 20, 0.95) !important;
-      backdrop-filter: blur(10px);
-      padding: 0.8rem 1.5rem;
-      border-bottom: 1px solid var(--border-color);
-      transition: var(--transition);
-    }
-
-    .navbar-brand h1 {
-      font-size: 1.8rem;
-      background: var(--gradient);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-      font-weight: 800;
-    }
-
-    .navbar-nav {
-      gap: 0.5rem;
-    }
-
-    .nav-link {
-      color: var(--text-secondary) !important;
-      font-weight: 500;
-      padding: 0.5rem 1rem !important;
-      border-radius: 4px;
-      transition: var(--transition);
-    }
-
-    .nav-link:hover, .nav-link:focus {
-      color: var(--text-primary) !important;
-      background: rgba(126, 87, 194, 0.1);
-    }
-
-    .navbar-toggler {
-      border: 1px solid var(--border-color);
-      padding: 0.4rem 0.7rem;
-    }
-
-    .navbar-toggler-icon {
-      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-    }
-
-    /* Sections */
-    section {
-      padding: 5rem 0;
-      position: relative;
-    }
-
-    .section-head {
-      font-size: 2.5rem;
-      text-align: center;
-      margin-bottom: 3rem;
-      position: relative;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-    }
-
-    .section-head::after {
-      content: '';
-      position: absolute;
-      bottom: -15px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 80px;
-      height: 4px;
-      background: var(--gradient);
-      border-radius: 2px;
-    }
-
-    /* Home section */
-    #home {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      position: relative;
-      overflow: hidden;
-    }
-
-    #home::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: radial-gradient(circle at 70% 20%, rgba(126, 87, 194, 0.1) 0%, transparent 40%);
-      z-index: -1;
-    }
-
-    .home-row {
-      align-items: center;
-    }
-
-    .head-name {
-      font-size: 4rem;
-      font-weight: 800;
-      margin: 1rem 0;
-      background: var(--gradient);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-    }
-
-    .head-role {
-      font-size: 1.8rem;
-      border-left: 4px solid var(--accent-primary);
-      padding-left: 1rem;
-      margin: 1.5rem 0;
-      color: var(--text-secondary);
-    }
-
-    .img-container {
-      position: relative;
-      border-radius: 20px;
-      overflow: hidden;
-      box-shadow: var(--shadow);
-      transition: var(--transition);
-      max-width: 450px;
-      margin: 0 auto;
-    }
-
-    .img-container:hover {
-      transform: translateY(-5px);
-      box-shadow: var(--shadow-hover);
-    }
-
-    .img-container img {
-      width: 100%;
-      height: auto;
-      display: block;
-      transition: var(--transition);
-    }
-
-    .img-container:hover img {
-      transform: scale(1.03);
-    }
-
-    /* Buttons */
-    .btn {
-      padding: 0.8rem 2rem;
-      border-radius: 50px;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      transition: var(--transition);
-      border: none;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .btn-primary {
-      background: var(--gradient);
-      color: white;
-      box-shadow: 0 4px 15px rgba(126, 87, 194, 0.3);
-    }
-
-    .btn-primary:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 25px rgba(126, 87, 194, 0.4);
-    }
-
-    .btn-dark {
-      background: var(--bg-card);
-      color: var(--text-primary);
-      border: 1px solid var(--accent-primary);
-    }
-
-    .btn-dark:hover {
-      background: var(--accent-primary);
-      color: white;
-    }
-
-    /* About section */
-    #about-me {
-      background-color: var(--bg-secondary);
-    }
-
-    .sub-head-text {
-      font-size: 1.8rem;
-      border-left: 4px solid var(--accent-primary);
-      padding-left: 1rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .text-justify {
-      text-align: justify;
-    }
-
-    /* Skills section */
-    .skill-cards {
-      margin-top: 2rem;
-    }
-
-    .skill-card-item {
-      background: var(--bg-card);
-      border-radius: 15px;
-      padding: 2rem;
-      margin-bottom: 2rem;
-      box-shadow: var(--shadow);
-      transition: var(--transition);
-      height: 100%;
-    }
-
-    .skill-card-item:hover {
-      transform: translateY(-5px);
-      box-shadow: var(--shadow-hover);
-    }
-
-    .skill-card-pop {
-      text-align: center;
-      margin-bottom: 1.5rem;
-    }
-
-    .hexagon {
-      width: 100px;
-      height: 100px;
-      background: var(--gradient);
-      margin: 0 auto;
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    }
-
-    .inner-hex {
-      width: 70px;
-      height: 70px;
-      background: var(--bg-card);
-      clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .skill-icon {
-      font-size: 2rem;
-      color: var(--accent-primary);
-    }
-
-    .skill-card-head {
-      font-size: 1.5rem;
-      text-align: center;
-      margin-bottom: 0.5rem;
-    }
-
-    .list-group {
-      background: transparent;
-      border: none;
-    }
-
-    .list-group-item {
-      background: transparent;
-      color: var(--text-secondary);
-      border: none;
-      border-bottom: 1px solid var(--border-color);
-      padding: 0.8rem 0.5rem;
-    }
-
-    .list-group-item:last-child {
-      border-bottom: none;
-    }
-
-    /* Education section */
-    .edu-cards {
-      margin-top: 2rem;
-    }
-
-    .edu-card {
-      background: var(--bg-card);
-      border-radius: 15px;
-      padding: 2rem;
-      margin-bottom: 2rem;
-      box-shadow: var(--shadow);
-      transition: var(--transition);
-    }
-
-    .edu-card:hover {
-      transform: translateY(-5px);
-      box-shadow: var(--shadow-hover);
-    }
-
-    .circprogress {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      background: conic-gradient(var(--accent-primary) 0%, var(--bg-secondary) 0%);
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-right: 1.5rem;
-    }
-
-    .circprogress::before {
-      content: '';
-      position: absolute;
-      width: 80px;
-      height: 80px;
-      background: var(--bg-card);
-      border-radius: 50%;
-    }
-
-    .circprogress span {
-      position: relative;
-      z-index: 1;
-      font-weight: 700;
-      font-size: 1.2rem;
-    }
-
-    .skill-list-item {
-      display: inline-block;
-      background: rgba(126, 87, 194, 0.1);
-      color: var(--accent-primary);
-      padding: 0.4rem 1rem;
-      border-radius: 50px;
-      margin: 0.3rem;
-      font-size: 0.9rem;
-      font-weight: 500;
-    }
-
-    /* Projects section */
-    .carousel {
-      margin-top: 2rem;
-    }
-
-    .project-card {
-      background: var(--bg-card);
-      border-radius: 15px;
-      overflow: hidden;
-      box-shadow: var(--shadow);
-    }
-
-    .project-card img {
-      width: 100%;
-      height: 250px;
-      object-fit: cover;
-    }
-
-    .project-description {
-      padding: 1.5rem;
-    }
-
-    #stacks_used {
-      margin: 1rem 0;
-    }
-
-    .accordion-item {
-      background: transparent;
-      border: none;
-    }
-
-    .accordion-button {
-      background: rgba(126, 87, 194, 0.1);
-      color: var(--text-primary);
-      font-weight: 600;
-      border: none;
-      border-radius: 8px !important;
-    }
-
-    .accordion-button:not(.collapsed) {
-      background: var(--accent-primary);
-      color: white;
-    }
-
-    .accordion-button:focus {
-      box-shadow: none;
-      border: none;
-    }
-
-    .project-card-list {
-      padding-left: 1.5rem;
-      margin-bottom: 0;
-    }
-
-    .project-card-list li {
-      margin-bottom: 0.8rem;
-    }
-
-    .project-card-list li:last-child {
-      margin-bottom: 0;
-    }
-
-    .carousel-control-prev, .carousel-control-next {
-      width: 50px;
-      height: 50px;
-      background: var(--accent-primary);
-      border-radius: 50%;
-      top: 50%;
-      transform: translateY(-50%);
-      opacity: 0.7;
-    }
-
-    .carousel-control-prev {
-      left: 15px;
-    }
-
-    .carousel-control-next {
-      right: 15px;
-    }
-
-    .carousel-control-prev:hover, .carousel-control-next:hover {
-      opacity: 1;
-    }
-
-    /* Contact section */
-    #contact {
-      background-color: var(--bg-secondary);
-    }
-
-    .contact-card {
-      background: var(--bg-card);
-      border-radius: 15px;
-      padding: 2rem;
-      box-shadow: var(--shadow);
-      height: 100%;
-    }
-
-    .contact-sub-head {
-      font-size: 1.2rem;
-      margin-bottom: 0.5rem;
-      color: var(--accent-primary);
-    }
-
-    .contact-card a {
-      color: var(--text-primary);
-      text-decoration: none;
-      transition: var(--transition);
-    }
-
-    .contact-card a:hover {
-      color: var(--accent-primary);
-    }
-
-    .social-outer {
-      display: flex;
-      gap: 1rem;
-      margin-top: 0.5rem;
-    }
-
-    .socials {
-      width: 45px;
-      height: 45px;
-      border-radius: 50%;
-      background: var(--bg-secondary);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: var(--transition);
-    }
-
-    .socials:hover {
-      background: var(--gradient);
-      transform: translateY(-3px);
-    }
-
-    .social-icon {
-      color: var(--text-primary);
-      font-size: 1.2rem;
-    }
-
-    .connect-form {
-      margin-top: 1.5rem;
-    }
-
-    .form-group {
-      margin-bottom: 1.5rem;
-    }
-
-    .form-control {
-      background: var(--bg-secondary);
-      border: 1px solid var(--border-color);
-      color: var(--text-primary);
-      padding: 0.8rem 1rem;
-      border-radius: 8px;
-      transition: var(--transition);
-    }
-
-    .form-control:focus {
-      border-color: var(--accent-primary);
-      box-shadow: 0 0 0 0.25rem rgba(126, 87, 194, 0.25);
-    }
-
-    label {
-      font-weight: 600;
-      margin-bottom: 0.5rem;
-      color: var(--text-secondary);
-    }
-
-    /* Footer */
-    footer {
-      background: var(--bg-card);
-      padding: 3rem 0 1.5rem;
-      border-top: 1px solid var(--border-color);
-    }
-
-    .copyrights {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-
-    footer h1 {
-      background: var(--gradient);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-      font-weight: 800;
-    }
-
-    /* Back to top button */
-    #toparrow {
-      position: fixed;
-      bottom: 30px;
-      right: 30px;
-      width: 50px;
-      height: 50px;
-      background: var(--gradient);
-      color: white;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-      box-shadow: var(--shadow);
-      transition: var(--transition);
-      z-index: 1000;
-      opacity: 0;
-      visibility: hidden;
-    }
-
-    #toparrow.active {
-      opacity: 1;
-      visibility: visible;
-    }
-
-    #toparrow:hover {
-      transform: translateY(-5px);
-      box-shadow: var(--shadow-hover);
-    }
-
-    /* Toast notifications */
-    .toast {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: var(--bg-card) !important;
-      color: var(--text-primary);
-      border-radius: 10px;
-      box-shadow: var(--shadow);
-      z-index: 1050;
-      border: 1px solid var(--border-color);
-    }
-
-    .toast-header {
-      background: var(--bg-secondary);
-      color: var(--text-primary);
-      border-bottom: 1px solid var(--border-color);
-    }
-
-    .btn-close {
-      filter: invert(1);
-    }
-
-    /* Loader */
-    .portfolio-loader {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: var(--bg-primary);
-      display: none;
-      align-items: center;
-      justify-content: center;
-      z-index: 9999;
-    }
-
-    .portfolio-inner-loader {
-      display: flex;
-      gap: 10px;
-    }
-
-    .mini-circle {
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      background: var(--gradient);
-      animation: bounce 1s infinite alternate;
-    }
-
-    .mini-circle:nth-child(2) {
-      animation-delay: 0.2s;
-    }
-
-    .mini-circle:nth-child(3) {
-      animation-delay: 0.4s;
-    }
-
-    @keyframes bounce {
-      from { transform: translateY(0); }
-      to { transform: translateY(-20px); }
-    }
-
-    /* Animations */
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    .fade-in {
-      animation: fadeIn 1s ease forwards;
-    }
-
-    /* Responsive design */
-    @media (max-width: 992px) {
-      .head-name {
-        font-size: 3rem;
-      }
-
-      .section-head {
-        font-size: 2rem;
-      }
-
-      .home-row {
-        text-align: center;
-      }
-
-      .head-role {
-        margin: 1rem auto;
-        width: fit-content;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .home-row
-      {
-        flex-direction:column-reverse;
-      }
-      .container-fluid {
-        padding: 0 1rem;
-      }
-
-      .head-name {
-        font-size: 2.5rem;
-      }
-
-      .section-head {
-        font-size: 1.8rem;
-      }
-
-      .img-container {
-        max-width: 300px;
-      }
-
-      .circprogress {
-        width: 80px;
-        height: 80px;
-        margin-right: 1rem;
-      }
-
-      .circprogress::before {
-        width: 60px;
-        height: 60px;
-      }
-    }
-
-    @media (max-width: 576px) {
-      section {
-        padding: 3rem 0;
-      }
-
-      .navbar-brand h1 {
-        font-size: 1.5rem;
-      }
-
-      .head-name {
-        font-size: 2rem;
-      }
-
-      .head-role {
-        font-size: 1.3rem;
-      }
-
-      .sub-head-text {
-        font-size: 1.5rem;
-      }
-
-      .carousel-control-prev, .carousel-control-next {
-        width: 40px;
-        height: 40px;
-      }
-    }
-  </style>
 </head>
+<style>
+
+</style>
 
 <body>
-  <!-- Your HTML content remains exactly the same -->
   <header>
+    <style>
+
+    </style>
     <div class="portfolio-loader" id="portfolio_loader">
       <div class='portfolio-inner-loader'>
         <div class='mini-circle'></div>
@@ -910,7 +178,7 @@
               and problem-solving. I possess skills in multiple programming languages including C, C++, Java, and
               Python, and have extensive experience with web technologies such as HTML, CSS, JavaScript, React, and
               Bootstrap. My ability to collaborate effectively on real-time projects was demonstrated during my
-              internship at Digisailor, where I contributed to projects like "Visuvasakappal" and "Fresh Wheels."
+              internship at Digisailor, where I contributed to projects like “Visuvasakappal” and “Fresh Wheels.”
               Additionally, I have developed comprehensive systems, such as the Student Information and Support System,
               which streamlined data access and improved communication efficiency.
 
@@ -1075,8 +343,6 @@
     </div>
   </footer>
   <a id="toparrow" href="#"><span>&uparrow;</span></a>
-
-  <!-- Your JavaScript remains exactly the same -->
   <script>
     // Hey GPT Look Here
     // document.addEventListener("DOMContentLoaded", (main) => {
@@ -1114,26 +380,26 @@ with the platform to perform various tasks.`,
           }
         ]
       },
-    {
-      id: 2,
-      project_title: 'Vote System',
-      project_image: 'assets/images/online-voting.png',
-      project_description: `The <b>Vote System</b> is a web-based application designed for college elections with multiple voting booths connected via a LAN network. Booth staff select criteria and proceed to vote if the poll is active, while admins manage polls and view live results.`,
-      project_link: "https://github.com/muthuabi/Vote_System/",
-      stacks_used: ['PHP', 'MySQL', 'HTML', 'CSS', 'JavaScript','Bootstrap','AJAX'],
-      project_features: [
-        { feature_head: 'Multiple Voting Booths', feature_body: "Booths connected through the same LAN network, with no login required for booth staff." },
-        { feature_head: 'Criteria Selection', feature_body: "Staff select criteria such as shift or gender before proceeding to vote." },
-        { feature_head: 'Admin Control', feature_body: "Admins can start and end polls, and perform CRUD operations on positions, candidates, and other admins." },
-        { feature_head: 'Live Ballot', feature_body: "Admins and viewers can see live polling results with viewer credentials created by the admin." },
-        { feature_head: 'Data Migration', feature_body: "Master admins can migrate current election data to an old table and reset tables for the next election cycle." },
-        { feature_head: 'Dynamic Dashboard', feature_body: "Displays multiple post cards with dynamic updates on total candidates and total votes once the poll has started." },
-        { feature_head: 'Master Admin Actions', feature_body: "Master admins can start (restart if ended accidentally) and end the poll, add/delete/restrict other admins, and delete votes, candidates, and positions tables with a single button. Deleting the poll returns it to the initial stage." },
-        { feature_head: 'Print Features', feature_body: "Print winners and all results with candidate image, college logo, and details after the poll ends, available for all officials (admin, sub-admin, viewer)." },
-        { feature_head: 'Live Ballot Notifications', feature_body: "Toast notifications appear when the server goes offline and persist until it comes back online." },
-        { feature_head: 'Position Status', feature_body: "Indicates whether a candidate is unopposed, no contestants, or opposed. Unopposed candidates don't receive votes and are not shown in the live ballot but are visible in print marked as unopposed." }
-      ]
-    }
+	  {
+  id: 2,
+  project_title: 'Vote System',
+  project_image: 'assets/images/online-voting.png',
+  project_description: `The <b>Vote System</b> is a web-based application designed for college elections with multiple voting booths connected via a LAN network. Booth staff select criteria and proceed to vote if the poll is active, while admins manage polls and view live results.`,
+  project_link: "https://github.com/muthuabi/Vote_System/",
+  stacks_used: ['PHP', 'MySQL', 'HTML', 'CSS', 'JavaScript','Bootstrap','AJAX'],
+  project_features: [
+    { feature_head: 'Multiple Voting Booths', feature_body: "Booths connected through the same LAN network, with no login required for booth staff." },
+    { feature_head: 'Criteria Selection', feature_body: "Staff select criteria such as shift or gender before proceeding to vote." },
+    { feature_head: 'Admin Control', feature_body: "Admins can start and end polls, and perform CRUD operations on positions, candidates, and other admins." },
+    { feature_head: 'Live Ballot', feature_body: "Admins and viewers can see live polling results with viewer credentials created by the admin." },
+    { feature_head: 'Data Migration', feature_body: "Master admins can migrate current election data to an old table and reset tables for the next election cycle." },
+    { feature_head: 'Dynamic Dashboard', feature_body: "Displays multiple post cards with dynamic updates on total candidates and total votes once the poll has started." },
+    { feature_head: 'Master Admin Actions', feature_body: "Master admins can start (restart if ended accidentally) and end the poll, add/delete/restrict other admins, and delete votes, candidates, and positions tables with a single button. Deleting the poll returns it to the initial stage." },
+    { feature_head: 'Print Features', feature_body: "Print winners and all results with candidate image, college logo, and details after the poll ends, available for all officials (admin, sub-admin, viewer)." },
+    { feature_head: 'Live Ballot Notifications', feature_body: "Toast notifications appear when the server goes offline and persist until it comes back online." },
+    { feature_head: 'Position Status', feature_body: "Indicates whether a candidate is unopposed, no contestants, or opposed. Unopposed candidates don't receive votes and are not shown in the live ballot but are visible in print marked as unopposed." }
+  ]
+}
 
     ];
     const skill_data = [
@@ -1271,45 +537,45 @@ with the platform to perform various tasks.`,
       }
     ];
 
-    const social_media_data = [
-      {
-        platform: "WhatsApp",
-        url: "https://wa.me/+919025190054/",
-        icon: "fab fa-whatsapp"
-      },
-      {
-        platform: "Twitter",
-        url: "https://twitter.com/M_Krish_Abi_07/",
-        icon: "fab fa-twitter"
-      },
-      {
-        platform: "LinkedIn",
-        url: "https://www.linkedin.com/in/muthukrishnan-m-800bb7274/",
-        icon: "fab fa-linkedin"
-      },
-      {
-        platform: "Quora",
-        url: "https://www.quora.com/profile/Muthukrishnan-M-36",
-        icon: "fab fa-quora"
-      },
-      {
-        platform: "Instagram",
-        url: "https://www.instagram.com/m.krish_abi_07",
-        icon: "fab fa-instagram"
-      }
-    ];
+const social_media_data = [
+  {
+    platform: "WhatsApp",
+    url: "https://wa.me/+919025190054/",
+    icon: "fab fa-whatsapp"
+  },
+  {
+    platform: "Twitter",
+    url: "https://twitter.com/M_Krish_Abi_07/",
+    icon: "fab fa-twitter"
+  },
+  {
+    platform: "LinkedIn",
+    url: "https://www.linkedin.com/in/muthukrishnan-m-800bb7274/",
+    icon: "fab fa-linkedin"
+  },
+  {
+    platform: "Quora",
+    url: "https://www.quora.com/profile/Muthukrishnan-M-36",
+    icon: "fab fa-quora"
+  },
+  {
+    platform: "Instagram",
+    url: "https://www.instagram.com/m.krish_abi_07",
+    icon: "fab fa-instagram"
+  }
+];
     const projects_list = document.querySelector("#projects_container");
     const skills_list = document.querySelector("#skills_container");
     const education_list = document.querySelector("#education_container");
     const social_media_container=document.querySelectorAll(".social-outer");//Array;
     const d_mobile=document.querySelectorAll(".d-mobile");//Array;
     const active_id_for_carousel = project_data[0].id;
-    if(project_data.length<=1)
-    {
-      d_mobile.forEach(element=>{
-        element.style.opacity="0%";
-      })
-    }
+	if(project_data.length<=1)
+	{
+		d_mobile.forEach(element=>{
+			element.style.opacity="0%";
+		})
+	}
     project_data.forEach(data => {
 
       const stacks_used = data.stacks_used.map(stack => `<li class='skill-list-item'>${stack}</li>`).join('');
@@ -1424,7 +690,7 @@ with the platform to perform various tasks.`,
     // Your web app's Firebase configuration
     // For Firebase JS SDK v7.20.0 and later, measurementId is optional
     const firebaseConfig = {
-      apiKey: "XXXXXXXXXX",
+      apiKey: "AIzaSyBZuj--rjgyERQ4LP6nrvRyjw4yH2nClsc",
       authDomain: "muthukrishnan-m-portfolio.firebaseapp.com",
       projectId: "muthukrishnan-m-portfolio",
       storageBucket: "muthukrishnan-m-portfolio.appspot.com",
@@ -1438,5 +704,8 @@ with the platform to perform various tasks.`,
     const analytics = getAnalytics(app);
   </script>
 </body>
+<script>
+
+</script>
 
 </html>

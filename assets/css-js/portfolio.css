@@ -1,9 +1,8 @@
-nav {
+/*nav {
 
     box-shadow: 0px 2px 7px 2px rgb(230, 227, 227);
     border-bottom: 0.2px solid rgb(238, 230, 230);
     border-radius: 5px;
-    background-color: white;
     z-index: 10000;
 }
 
@@ -154,7 +153,7 @@ a.btn {
 }
 
 #about-me a.btn {
-    background-color: purple;
+/*     background-color: purple; */
     padding: 0.5rem 1rem;
 }
 @keyframes anime-pull-up
@@ -191,7 +190,7 @@ section,.edu-card,.skill-card-item,.contact-card
 }
 
 #contact {
-    background-color: rgb(255, 255, 255);
+/*     background-color: rgb(255, 255, 255); */
 }
 
 .section-head::first-letter {
@@ -230,7 +229,7 @@ section,.edu-card,.skill-card-item,.contact-card
 }
 
 section:nth-of-type(2) {
-    background-color: rgb(238, 232, 232);
+/*     background-color: rgb(238, 232, 232); */
 }
 
 /*section:nth-of-type(3) {
@@ -276,7 +275,7 @@ section:nth-of-type(2) {
     right: -3rem;
     padding: 1.5rem;
     background-color: rgb(139, 127, 127);
-    color: rgb(85, 170, 226);
+    color: rgb(85, 170, 246);
     width: 2rem;
     height: 2rem;
     border-radius: 2rem;
@@ -334,7 +333,7 @@ img {
 }
 
 .skill-card-item {
-    background-color: white;
+/*     background-color: white; */
     padding: 0.5rem 0.8rem;
     position: relative;
     display: flex;
@@ -389,7 +388,7 @@ img {
     justify-content: center;
     align-items: center;
     /* background: radial-gradient(rgb(209, 219, 223) 30% ,rgb(121, 214, 202) 70%); */
-    background-color: rgba(144, 211, 255, 0.856);
+/*     background-color: rgba(144, 211, 255, 0.856); */
     transition: transform 0.5s;
 
 }
@@ -742,4 +741,4 @@ footer a {
     {
         width:100%;
     }
-}
+}*/
